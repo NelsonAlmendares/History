@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400;8..144,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/* -------------------------- HEADER PRINCIPAL -------------------------- */
+header {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+/* Logo del sitio */
+.logo-img {
+    height: 120px;
+}
+.menu-logo {
+    margin-top: 45px;
+    margin-left: 45px;
+}
+.searh-logo {
+    margin-top: 45px;
+    margin-right: 45px;
+}
+
+/* -------------------------- NAV -------------------------- */
+.navbar {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 20px 30px -10px;
+}
+.active {
+    font-weight: bolder;
+}
+
+/* -------------------------- MAIN -------------------------- */
+.prepsentation {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+}
+.img-main {
+    margin-top: 30px;
+    height: 800px;
+}
+.main-paragraph {
+    font-family: 'Lora', serif;
+    font-size: 3.6rem;
+    text-align: left;
+    padding-left: 1.5rem;
+    margin-top: 13rem;
+    font-weight: 600;
+}
+.second-paragraph {
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.text-paragraph {
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.under-img-p {
+    text-align: right;
+    margin-right: 5px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 300;
+}
+.menu__icon, .search__icon {
+    cursor: pointer;
+}
+
+/* -------------------------- CONTENTS -------------------------- */
+.contents {
+    margin-top: 40px;
+}
+.left-col {
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+.letter {
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-left: 15px;
+    margin-top: 2.5rem;
+}
+.newspaper-letter {
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+.card-container {
+    border: 1px solid #E3E3E3;
+    padding: 8px;
+    background-color: #E3E3E3;
+    text-align: justify;
+}
+.publicity-card {
+    margin-bottom: 20px;
+}
+.publicity-img {
+    height: 120px;
+    margin-top: 5px;
+}
+.img-card-publicity {
+    display: flex;
+    justify-content: center;
+}
+.card-body {
+    margin: 0;
+    padding: 0;
+}
+.card-title {
+    margin-left: 5px;
+}
+.card-text {
+    margin-top: 10px;
+    margin-right: 18px;
+    margin-left: 5px;
+}
+.card-fotter {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.body-card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.text-paragraph-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.stiky {
+    position: sticky;
+    top: 3rem;
+}
+
+.section-inside {
+    padding: 2rem;
+    border-top: 1px solid black;
+    margin-top: 4rem;
+}
+.section-ouside {
+    padding: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.img__info {
+    font-size: 12px;
+}
+
+/* -------------------------- FOOTER -------------------------- */
+footer {
+    background-color: #2D2D2D;
+    margin-top: 4rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
+    color: #E3E3E3;
+}
+.footer-item {
+    color: #52A3E2;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.column {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.footer__li a{
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
