@@ -202,7 +202,12 @@
 }
 .img__container-text {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     
+}
+
+.book__detail {
+    margin-bottom: 4rem;
 }
