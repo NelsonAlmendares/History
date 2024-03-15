@@ -99,6 +99,7 @@ header {
 }
 .publicity-img {
     height: 120px;
+    width: 90px;
     margin-top: 5px;
 }
 .img-card-publicity {
@@ -111,6 +112,7 @@ header {
 }
 .card-title {
     margin-left: 5px;
+    text-align: left;
 }
 .card-text {
     margin-top: 10px;
@@ -144,6 +146,10 @@ header {
     border-top: 1px solid black;
     margin-top: 4rem;
 }
+.section__inside {
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
 .section-ouside {
     padding: 1rem;
     border-top: 1px solid black;
@@ -151,6 +157,11 @@ header {
 }
 .img__info {
     font-size: 12px;
+}
+
+/* infosite */
+.infosite {
+    background-color: #FFB80C;
 }
 
 /* -------------------------- FOOTER -------------------------- */
