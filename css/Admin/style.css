@@ -160,8 +160,27 @@ header {
 }
 
 /* infosite */
-.infosite {
-    background-color: #FFB80C;
+#infosite {
+    background: url("../../resources/29est-biblioteca1.jpg");
+    object-fit: cover;
+    z-index: 2;
+    
+}
+.link__labes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.info__link {
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 /* -------------------------- FOOTER -------------------------- */
