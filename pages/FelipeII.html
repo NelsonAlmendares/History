@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/Admin/style.css">
+  <link rel="stylesheet" href="../css/Admin/sample_pages.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>History</title>
+</head>
+
+<body>
+  <header class="header-top">
+    <div class="d-flex">
+      <div class="col-md-3 text-left">
+        <div class="menu-logo">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAH9JREFUSEvtlNEJgDAQQ183cRPdRDdRN9FNdBNHsUXwq6Clx7XoBe7zEhJCHIpwilqYmEjaxWNsgHC5OIBwN2LOJmDMVQJmzxG46hETMBWnKF4QVWcd0Aso7r7VS1UFGYBWwNkKbE/OBHSsjdfEfHOuVFff2picwL9WPzmetw8nRp4SHB6SGskAAAAASUVORK5CYII="
+        class="menu__icon"/>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="../resources/Logo.png" class="logo-img" alt="" srcset="">
+      </div>
+      <div class="col-md-3 text-end search-icons align-middle">
+        <div class="searh-logo">
+          <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAVNJREFUSEvdldtRw0AMRZVKApUQKkmoJFBJoBJCJaEUfDLSjLxPOVn8kf2xPWPr3Hul9W5kxbVZkSU92JOIHFTQVkR+pudfETnfIrIGA3Kaiu4qRQG+LYWWYAC+HcQ7QYQX8DG99x51mcIodtGPa+pT1zj8jABTGI5QDui5U4CY6Sfvvuq1+YmH+fj4uDcEOEQc11CcHoZK1EZcmQP6dVRhCAw7s1jInz5ElqUREuidWb9CkagSS4PH3p6dvbAoEoUtSqM0IOHp0gEhylD0Huani0nsNdySwGRkerOc/fijlv7hNF0eFO5xqam+kP2q+AGzcL/Xqwm4C0YRpoz9Q/HaMte2N7+0d6UkrjVa42o/3ReF8kwhXBIx9/5fSr3mfuvujcDO9rE3gSNgpbOv6HAEzAYnPWwz4ChYDTg760bCUmB2qI6GGZA+Zufhf8CqA/y4sD/l9FEcvUzVDgAAAABJRU5ErkJggg=="
+          class="search__icon float-end"/>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navs -->
+  <div class="col-md-12">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Por el momento no usaré el botón  -->
+        <!-- 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown" id="myDropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Biographies
+                </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/FelipeII.html">Felipe II Rey de España</a></li>
+              <li><a class="dropdown-item" href="../pages/Tesla.html">Nikola Tesla</a></li>
+              <li> 
+                <a class="dropdown-item" href="#"> Don Bosco &raquo; </a>
+                  <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/don_bosco.html">Historia</a></li>
+                      <li><a class="dropdown-item" href="#">Libros</a></li>
+                      <li><a class="dropdown-item" href="#">Seminarios &raquo; </a>
+                          <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Congregación</a></li>
+                              <li><a class="dropdown-item" href="#">Su santidad</a></li>
+                          </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Referencias externas</a></li>
+                  </ul>
+              </li>
+              <li><a class="dropdown-item" href="../pages/MarieCurie.html">Marie Curie</a></li>
+              <li><a class="dropdown-item" href="../pages/Leonardo.html">Leonardo da Vinci</a></li>
+              <li> 
+                <a class="dropdown-item" href="../pages/neil_armstrong.html"> Neil Armstrong &raquo; </a>
+                <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item active" href="#">Historia</a></li>
+                    <li><a class="dropdown-item" href="#">Documentales</a></li>                    
+                    <li><a class="dropdown-item" href="#">Referencias externas</a></li>
+                </ul>
+              </li>
+
+                  <li><a class="dropdown-item" href="../pages/PrincesaDiana.html">Princesa Diana de Gales</a></li>
+                  <li><a class="dropdown-item" href="../pages/JuanPablo.html">Juan Pablo II</a></li>
+              </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="contenido mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Biographies</li>
+          <li class="breadcrumb-item active" aria-current="page">Nikola Tesla</li>
+        </ol>
+      </nav>
+
+      <section class="main__text">
+          <div class="text-center">
+              <h6 class="name__text">Created by Nelson Almendares</h6>
+          </div>
+          <div class="text-center">
+              <span class="capital__text">Felipe II de Habsburgo</span>
+          </div>
+          <div class="col-md-12 content__main">
+              <p class="text__content">
+                (Valladolid, 1527 - El Escorial, 1598) Rey de España (1556-1598). A excepción del Sacro Imperio Germánico, cuya corona cedió a Fernando I de Habsburgo, el rey y emperador Carlos V legó todas las posesiones europeas y americanas que constituían el Imperio español a su hijo Felipe II, que pasó a ser entonces (como ya lo había sido su progenitor) el monarca más poderoso de la época..<br><br>
+              </p>
+              <div class="text-center">
+                <div class="img__header">
+                  <img src="../resources/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg" alt="San Juan Bosco" class="img-fluid img__bio"> <br> 
+                  <p class=" text__img"><span>|</span> FOTO: <a href="https://www.biografiasyvidas.com/biografia/f/felipe_ii.htm">cc</a></p><br>
+                </div>
+              </div>
+      </section>
+      <section class="content__info">
+        <div class="creator">
+          <img src="../resources/profile/Profile.jpg" alt="" class="user__creator-profile">
+          <div class="creator__info">
+            <h6><a href=""> Nelson José Almendares Ruiz </a></h6>
+            <p>Content Creator</p>
+          </div>
+        </div>
+        
+        <p class="text__content-reading">Updated last time 12 minutes ago - 8 minutes of reading</p>
+        <p class="text__content"> 
+          <span class="capital__letter">"H</span>
+          ombre austero, profundamente religioso y perfectamente preparado para las labores de gobierno, a las que consagró todas sus energías, 
+          <b>«el Rey Prudente»</b> asumió como deber insoslayable la defensa de la fe católica, y combatió tanto la propagación de la Reforma protestante en Europa como los avances del <b>Imperio Otomano</b> en el Mediterráneo. <br> De este modo, aun sin aquella aspiración a formar un Imperio cristiano universal que guió los pasos de su padre, Felipe II hizo de nuevo frente a los turcos, a los que derrotó en la batalla de Lepanto (1571), 
+          y extendió hasta dimensiones nunca vistas los dominios del Imperio español con la <b>incorporación de Portugal y de sus colonias africanas y asiáticas</b>.
+          <br><br> Pero los designios de consolidar la hegemonía en Europa toparon, como ya había ocurrido en el reinado de Carlos V, con la expansión del protestantismo y la oposición de las potencias rivales: las campañas militares para frenar las revueltas protestantes de los Países Bajos desangraron la hacienda española
+          <br><br>
+        </p>
+        </section>
+
+
+      <section class="phrases">
+        <h6 class="citas__sitio">Nikola Tesla dijo: </h6>
+        <p class="text__content citas__inside">" <b>Lo importante es pensar con claridad</b>" <br> « Los científicos de hoy piensan en profundizar y no en esclarecer. Uno debe ser sensato para pensar con claridad, pero uno puede pensar con profundidad aún siendo un demente».</p>
+      </section>
+
+      <section class="pictures__info text-center">
+        <img src="https://lacasadecampoes.files.wordpress.com/2022/02/felipe-ii-esposas-u30835339200ued-1248x69840abc.jpg?w=1920&h=768&crop=1" class="img-fluid img__info-pictures" alt="">
+        <p class="cita">
+            “Don Felipe Segundo (este gran Rey) fue el que plantó en Madrid de asiento su Corte año de 1561. Y quien ordenó, y ennobleció todas las Casas Reales, y Bosques de su contorno para las Reales Recreaciones y especialmente los del Pardo, Aranjuez, el Escorial, y Balsaín; el que al Alcázar de Madrid añadió la Casa del Campo, el Parque y Bosque de Sagra”.
+            Recopilación de Reales Ordenanzas, página 1, Parte Primera. (1687)<br><br>
+            En 1556, año en el que dio comienzo el reinado de Felipe II, sus credenciales eran la de uno de los reyes más poderosos del mundo, tomo nota del encabezado del juro (Archivo Regional de la Comunidad de Madrid Signatura 96173/6).<br>
+        </p>
+        <div class="cita__author">
+          <p class="text-start">PICTURE BY: <a href="https://lacasadecampo.es/2020/08/19/felipe-ii/" class="text-secondary">Lacasadecampo.com</a></p>
+        </div>
+      </section>
+
+      <section class="phrases" id="notes">
+        <h6 class="citas__sitio">Notas escritas: </h6>
+        <p class="text__content citas__inside"> <span class="capital__commas">"</span> <span class="phrases__text">A nuestros súbditos y vasallos,</span> Por la presente, yo, Felipe II, Rey de España y sus dominios, me dirijo a vosotros con palabras de gratitud y aprecio por vuestro continuo compromiso y lealtad hacia la Corona. Es con gran satisfacción que observo vuestro arduo trabajo y devoción hacia el bienestar de nuestra nación. <br> <br>
+            En estos tiempos de desafíos y cambios, es imperativo mantenernos unidos en nuestra misión de preservar la grandeza y el honor de España. Confío en vuestra diligencia y valor para enfrentar cualquier obstáculo que se presente en nuestro camino. <br> <br>
+            Recordad siempre que vuestro esfuerzo individual contribuye al florecimiento colectivo de nuestro reino. Sigamos adelante con determinación y orgullo, recordando siempre nuestras raíces y tradiciones que nos unen como pueblo. <br> <br>
+            Que la providencia divina nos guíe en nuestros esfuerzos y que la gloria de España resplandezca eternamente bajo nuestro reinado.
+            <span>
+                <br> <p class="fw-normal text-center">Con todo mi afecto y consideración,". <br>Felipe II</p>
+            </span>
+             <br><br>
+      </section>
+
+      <section class="content__info" id="text__content-bottom">       
+        <h3 class="text__content-h3">La política exterior</h3>
+        <p class="text__content">La división de la herencia de Carlos V facilitó la política internacional de Felipe II: al pasar el Sacro Imperio Germánico a manos de Fernando I de Habsburgo, España quedaba libre de las responsabilidades imperiales. En política exterior, Felipe II hubo de abandonar el proyecto de alianza con Inglaterra a causa de la temprana muerte de <b>María Tudor</b> (1558). <br> Las victorias militares de San Quintín (1557) y Gravelinas (1558) pacificaron el recurrente conflicto con Francia (Paz de Cateâu Cambrésis, 1559); el pacto quedó reforzado con el matrimonio de Felipe II con la hija de <b>Enrique II de Francia</b>, Isabel de Valois. Los inicios de su reinado no podían ser más prometedores: Francia, que había sido la perpetua potencia rival de Carlos V, dejaba de ser el principal problema para España.
+            <br>En consecuencia, Felipe II pudo orientar su política exterior hacia el Mediterráneo, encabezando la empresa de frenar el poderío islámico representado por el Imperio Otomano; esta empresa tenía tintes de cruzada religiosa, pero también una lectura en clave interna, pues Felipe II hubo de reprimir una rebelión de los moriscos de Granada (1568-1571)
+          </p>
+          
+      </section>
+
+      <section class="book__detail">
+        <div class="more__info d-flex">
+          <div class="col-md-4 img__container">
+            <img src="../resources/Cover.jpg" class=" img__book" alt="">
+          </div>
+          <div class="col-md-8 img__container-text">
+            <h4>Ensayo sobre Felipe II hombre de estado</h4>
+            <p class="text__content">Este largo ensayo, publicado por primera vez en Century Illustrated Magazine en junio de 1900, es una muestra más del genio del inventor serbio NIKOLA TESLA (1857-1943), el científico revolucionario que cambió para siempre los campos científicos de la electricidad y el magnetismo. .</p>
+            <p class="fst-italic">Por: Staff | Fuente: <i>L</i> Casa del Libro</p>
+            <a href="https://www.casadellibro.com/ebook-el-problema-del-aumento-de-la-energia-humana-traducido-ebook/9791221340754/13057641" type="button" class="btn btn-outline-info">Leer más</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pictures__info text-center mt-3">
+        <p class="cita">
+            Felipe II nació el 21 de mayo de 1527 en Valladolid, España, como hijo de Carlos I de España (también conocido como Carlos V del Sacro Imperio Romano Germánico) y de Isabel de Portugal. Ascendió al trono español en 1556, sucediendo a su padre, y se convirtió en uno de los monarcas más poderosos de su tiempo. <br>
+            Durante su reinado, Felipe II expandió enormemente el imperio español, consolidando territorios en Europa, América, África y Asia. Fue un ferviente defensor del catolicismo y lideró la Contrarreforma, combatiendo el protestantismo en Europa. También enfrentó desafíos como la guerra con los Países Bajos y la amenaza otomana en el Mediterráneo.
+        </p>
+        <div class="cita__author">
+          <p class="text-start">COMMENT BY: <a href="https://ius-sdb.com/acerca-de-nosotros/don-bosco/?lang=es" class="text-secondary">Nelson José Almendares Ruiz</a></p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer__content">
+      <div class="col-md-12 text-center">
+        <img src="../resources/Logo.png" class="logo-img" alt="" srcset="">
+      </div>
+      <div class="grid">
+        <div class="column">
+          <span class="footer-item">Conoce más</span>
+            <li class="footer__li mt-4 text-white"><a href="#">Nosotros</a></li>
+            <li class="footer__li"><a href="#">Clubes</a></li>
+            <li class="footer__li"><a href="#">Ubicaciones</a></li>
+        </div>
+        <div class="column">
+          <span class="footer-item">Mi cuenta</span>
+            <li class="footer__li mt-4 text-white"><a href="#">Ajustes</a></li>
+            <li class="footer__li"><a href="#">Mi historial de Busquedas</a></li>
+            <li class="footer__li"><a href="#">Lista de Lecturas</a></li>
+            <li class="footer__li"><a href="#">Soporte Técnico</a></li>
+            <li class="footer__li"><a href="#">Encargos</a></li>
+        </div>
+        <div class="column">
+          <span class="footer-item">Nuestras Redes</span>
+            <li class="footer__li mt-4 text-white"><a href="#">Facebook</a></li>
+            <li class="footer__li"><a href="#">Twitter</a></li>
+            <li class="footer__li"><a href="#">Instagram</a></li>
+            <li class="footer__li"><a href="#">Linked In</a></li>
+        </div>
+        <div class="column">
+          <span class="footer-item">Público</span> <br>
+            <li class="footer__li mt-4 mb-4 text-white"><a href="#">Eventos</a></li>
+          <span class="footer-item">Políticas y Privacidad</span>
+            <li class="footer__li mt-4 text-white"><a href="#">Reglamento</a></li>
+            <li class="footer__li"><a href="#">Términos y Condiciones</a></li>
+            <li class="footer__li"><a href="#">Políticas de privacidad</a></li>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/menu.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
