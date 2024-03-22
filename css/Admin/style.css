@@ -223,6 +223,20 @@ li {
     margin-bottom: 10px;
 }
 
+/* Para editar las imagenes de Perfil */
+.img-profile {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 	.dropdown-menu li{ position: relative; 	}
