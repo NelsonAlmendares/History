@@ -17,6 +17,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+    margin-top: 2.5rem;
 }
 .main__text {
     align-items: center;
@@ -67,7 +68,7 @@
 }
 .img__header {
     margin: 0 auto;
-    width: 740px;
+    width: 0 auto;
 }
 
 .creator p {
@@ -222,4 +223,146 @@
 
 .book__detail {
     margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cita {
+        border-left: 1px solid #245A85;
+        margin-left:3rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        font-size: 1.1rem;
+    }
+    .cita__author {
+        margin-left: 3rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        font-weight: 400;
+    }
+}
+
+/* ============ small devices ============ */	
+@media only screen and (max-width: 992px) {
+    /* Estilos para pantallas más pequeñas, como tablets */
+    /* Cabecera */
+    .contenido {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #img-bio {
+        width: auto;
+        height: 500px;
+    }
+
+    .capital__text {        
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4rem;
+    }
+    .phrases {
+        margin: 0 auto;
+        width: 85%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-width: 60%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Pictures */
+    .pictures__info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .cita {
+        border-left: 1px solid #245A85;
+        margin-left: 3rem;
+        padding-left: 1rem;
+        padding-right: 3rem;
+    }
+    .cita__author {
+        margin-left: 3rem;
+        padding-left: 1rem;
+        padding-right: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+  
+@media only screen and (max-width: 768px) {
+    /* Estilos para pantallas aún más pequeñas, como móviles en orientación horizontal */
+    .capital__text {        
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+    .phrases {
+        margin: 0 auto;
+        width: 95%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-width: 90%;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
+    .text__content {
+        text-align: center;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        margin-top: 1.3rem;
+    }
+
+    /* Citas */
+    .cita {
+        border-left: 1px solid #245A85;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .cita__author {
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Estilos para pantallas pequeñas, como móviles en orientación vertical */
+    .text__content {
+        text-align: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 1.3rem;
+    }
+    .capital__text {        
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.4rem;
+    }
+    .content__info {
+        margin-bottom: 2rem;
+    }
+    .text__content-reading {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0.3rem;
+    }
+    .creator {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .phrases {
+        margin: 0 auto;
+        width: 95%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-width: 60%;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
+    /* Pictures */
+    .pictures__info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

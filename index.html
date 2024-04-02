@@ -14,9 +14,11 @@
   <header class="header-top">
     <div class="top-menu">
       <div class="col-md-3 text-left">
-        <div class="menu-logo text-center">
+        <div class="menu-logo text-center navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAH9JREFUSEvtlNEJgDAQQ183cRPdRDdRN9FNdBNHsUXwq6Clx7XoBe7zEhJCHIpwilqYmEjaxWNsgHC5OIBwN2LOJmDMVQJmzxG46hETMBWnKF4QVWcd0Aso7r7VS1UFGYBWwNkKbE/OBHSsjdfEfHOuVFff2picwL9WPzmetw8nRp4SHB6SGskAAAAASUVORK5CYII="
-        class="menu__icon"/>
+        class="menu__icon" id="menu__ico"/>
+
         </div>
       </div>
       <div class="col-md-6 text-center">
@@ -37,12 +39,6 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <!-- Por el momento no usaré el botón  -->
-        <!-- 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-         -->
-
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
@@ -88,7 +84,7 @@
               <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Topics</a>
+              <a class="nav-link" href="./pages/galery.html">Galery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contacts</a>
@@ -111,43 +107,46 @@
       <div class="col-md-7">
         <h2 class="main-paragraph"> Juan Melchor Bosco Ochienna, también llamado Don Bosco.</h2>
         <h5 class="text-left second-paragraph">I Becchi, 1815 - Turín, 1888</h5>
-        <p class="text-paragraph">
+        <p class="text-paragraph text-intro">
           Santo, sacerdote y pedagogo italiano, fundador de la orden salesiana. Hijo de un humilde matrimonio campesino, 
           su niñez fue dura, pues después de perder a su padre tuvo que trabajar sin descanso para sacar adelante la hacienda familiar.
         </p>
       </div>
     </div>
   </section>
-
+  
   <!-- *************************************** CABECERA PRINCIPAL *************************************** -->
   <section class="contents">
-    <div class="container d-flex">
-      <div class="col-md-8 left-col" id="left-col">
-        <p class="text-paragraph ">"<u>De la sana educación de los jóvenes dependen la felicidad de las naciones", </u><strong><em>San Juan Bosco</em></strong></p>
-        <p class="text-paragraph">
-          Juan Bosco nace el 16 de agosto de 1815 en I Becchi, un caserío cerca de Turín, Italia. La <b>pobreza</b> y la <b>orfandad</b> marcarán su infancia campesina, pero con la ayuda de personas muy concretas descubre la paternidad de un <b>Dios</b> que lo sostiene y acompaña en lo cotidiano.
-          Desde chico siente el llamado al <b>sacerdocio</b>. Juan logra hacer realidad su deseo y <b>continúa sus estudios al tiempo que trabaja</b> en diferentes oficios: dando lecciones particulares, siendo mozo de café y aprendiz de sastre, entre otros.
-          En 1842, ya ordenado sacerdote, Juan se encuentra con <b>los muchachos que pueblan la cárcel de la ciudad de Turín.</b> Impactado por esta experiencia comienza a recorrer las calles de esa ciudad, descubriendo el rostro de tantos chicos <b>explotados por sus patrones y abandonados</b>. Desde su propia historia de privaciones, y entendiendo siempre a Dios como un Padre bueno, Juan dará una <b>respuesta concreta</b> a esa juventud pobre, abandonada y en peligro.
-          Será conocido entonces como <b>Don Bosco</b>. Y su genial creación, el <b>oratorio</b>, será para los jóvenes <b>casa</b> que recibe con cariño, patio para encontrarse con amigos, <b>escuela</b> que prepara para la vida y <b>parroquia</b> para conocer a Jesús. Desde los talleres y las aulas de Valdocco, el barrio de Turín, que vio nacer su obra, el <b>oratorio se expande</b> primero a Francia y España, para luego cruzar el océano y llegar a América. 
-          Juan <b>muere</b> el 31 de enero de 1888 en Turín, Italia. A su muerte, más de mil salesianos vivían en 57 casas distribuidas en ocho países. El 1 de abril de 1934, el papa Pío X lo declara santo. Y en 1988, San Juan Pablo II le dió el título de "Padre, Maestro y Amigo de la juventudes".
-        </p>
-
-        <div class="section-inside">
-          <p class="text-paragraph ">"<u>Marie Curie, Premio Nobel de Física 1903",</u><strong><em>– Química 1911</em></strong></p>
-          <img src="./resources/cbf41ce2-63ad-4f30-891f-34f87647b3e6_21-9-aspect-ratio_default_0.jpg" class="img-fluid" alt="" srcset="">
-          <p class="text-end img__info text-secondary">
-            Marie Curie fue la primera mujer en recibir el premio Nobel en Física y obtuvo uno más en Química. GETTY \ IMAGES.
+    <div class="container d-flex publicidad" id="publicidad__container">
+      <div class="col-md-8" id="left-col">
+        <div class="main__content">
+          <p class="text-paragraph ">"
+            <u>De la sana educación de los jóvenes dependen la felicidad de las naciones", </u><strong><em>San Juan Bosco</em></strong></p>
+          <p class="text-paragraph">
+            Juan Bosco nace el 16 de agosto de 1815 en I Becchi, un caserío cerca de Turín, Italia. La <b>pobreza</b> y la <b>orfandad</b> marcarán su infancia campesina, pero con la ayuda de personas muy concretas descubre la paternidad de un <b>Dios</b> que lo sostiene y acompaña en lo cotidiano.
+            Desde chico siente el llamado al <b>sacerdocio</b>. Juan logra hacer realidad su deseo y <b>continúa sus estudios al tiempo que trabaja</b> en diferentes oficios: dando lecciones particulares, siendo mozo de café y aprendiz de sastre, entre otros.
+            En 1842, ya ordenado sacerdote, Juan se encuentra con <b>los muchachos que pueblan la cárcel de la ciudad de Turín.</b> Impactado por esta experiencia comienza a recorrer las calles de esa ciudad, descubriendo el rostro de tantos chicos <b>explotados por sus patrones y abandonados</b>. Desde su propia historia de privaciones, y entendiendo siempre a Dios como un Padre bueno, Juan dará una <b>respuesta concreta</b> a esa juventud pobre, abandonada y en peligro.
+            Será conocido entonces como <b>Don Bosco</b>. Y su genial creación, el <b>oratorio</b>, será para los jóvenes <b>casa</b> que recibe con cariño, patio para encontrarse con amigos, <b>escuela</b> que prepara para la vida y <b>parroquia</b> para conocer a Jesús. Desde los talleres y las aulas de Valdocco, el barrio de Turín, que vio nacer su obra, el <b>oratorio se expande</b> primero a Francia y España, para luego cruzar el océano y llegar a América. 
+            Juan <b>muere</b> el 31 de enero de 1888 en Turín, Italia. A su muerte, más de mil salesianos vivían en 57 casas distribuidas en ocho países. El 1 de abril de 1934, el papa Pío X lo declara santo. Y en 1988, San Juan Pablo II le dió el título de "Padre, Maestro y Amigo de la juventudes".
+          </p>
+  
+          <div class="section-inside">
+            <p class="text-paragraph ">"<u>Marie Curie, Premio Nobel de Física 1903",</u><strong><em>– Química 1911</em></strong></p>
+            <img src="./resources/cbf41ce2-63ad-4f30-891f-34f87647b3e6_21-9-aspect-ratio_default_0.jpg" class="img-fluid" alt="" srcset="">
+            <p class="text-end img__info text-secondary">
+              Marie Curie fue la primera mujer en recibir el premio Nobel en Física y obtuvo uno más en Química. GETTY \ IMAGES.
+            </p>
+          </div>
+          <p class="text-paragraph-content">
+            Maria Salomea Skłodowska-Curie, conocida como Marie Curie, nació el 7 de noviembre de 1867 en Varsovia, Polonia. Fue una física, matemática y 
+            química pionera en el campo de la radiactividad. Marie no solamente fue la primera mujer, sino que la primera persona en recibir dos Premios 
+            Nobel en distintas especialidades: Física (1903) y Química (1911), y la primera mujer en hacer clases en la Universidad de París. 
+            Marie se casó con el científico Pierre Curie y fue madre de quien recibiría más adelante también un Premio Nobel en Química, Irène Joliot-Curie. <br><br>
+            Motivada por el reciente descubrimiento de Antoine Henri Becquerel, que demostró que las sales de uranio emitían rayos de naturaleza 
+            desconocida, sin la necesidad de ser expuestas a la luz, Marie Curie investigó más allá este tema y descubrió que los compuestos formados 
+            por el torio también emitían rayos de forma espontánea. A este fenómeno le llamaron radioactividad.
           </p>
         </div>
-        <p class="text-paragraph-content">
-          Maria Salomea Skłodowska-Curie, conocida como Marie Curie, nació el 7 de noviembre de 1867 en Varsovia, Polonia. Fue una física, matemática y 
-          química pionera en el campo de la radiactividad. Marie no solamente fue la primera mujer, sino que la primera persona en recibir dos Premios 
-          Nobel en distintas especialidades: Física (1903) y Química (1911), y la primera mujer en hacer clases en la Universidad de París. 
-          Marie se casó con el científico Pierre Curie y fue madre de quien recibiría más adelante también un Premio Nobel en Química, Irène Joliot-Curie. <br><br>
-          Motivada por el reciente descubrimiento de Antoine Henri Becquerel, que demostró que las sales de uranio emitían rayos de naturaleza 
-          desconocida, sin la necesidad de ser expuestas a la luz, Marie Curie investigó más allá este tema y descubrió que los compuestos formados 
-          por el torio también emitían rayos de forma espontánea. A este fenómeno le llamaron radioactividad.
-        </p>
       </div>
 
       <!-- ******************************* PUBLICIDAD DEL SITIO ******************************* -->
@@ -161,12 +160,11 @@
           <div class="card-container publicity-card">
             <div class="body-card d-flex">
               <div class="col-md-3 img-card-publicity">
-                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1jUUmQ.img?w=800&h=435&q=60&m=2&f=jpg" class="publicity-img" alt="" srcset="">
+                <img src="./resources/publicidad/milei.jpg" class="publicity-img" alt="milei">
               </div>
               <div class="col-md-9">
-                <h5 class="card-title">Los memes de la derrota de Milei</h5>
-                <p class="card-text">Sesión informativa tomada de varias fuentes para fomentar el hábito de la lectura en nuestro nuevos visitantes</p>
-                <a class="btn btn-outline-secondary mb-3" href="https://www.msn.com/es-xl/entretenimiento/famosos/los-memes-de-la-dura-derrota-de-javier-milei/ss-BB1jUUo6?ocid=msedgdhp&pc=U531&cvid=135d15352ccf4141837722e80be2f045&ei=18#image=1">Quiero leer</a>
+                <h5 class="card-title">Los memes de la derrota de Milei</h5> <br>
+                <a class="btn__dark mb-3" href="https://www.msn.com/es-xl/entretenimiento/famosos/los-memes-de-la-dura-derrota-de-javier-milei/ss-BB1jUUo6?ocid=msedgdhp&pc=U531&cvid=135d15352ccf4141837722e80be2f045&ei=18#image=1">Quiero leer</a> <br><br>
                 <p class="card-fotter text-body-secondary"> <i>Updated 3 days ago.</i></p>
               </div>
             </div>
@@ -174,12 +172,11 @@
           <div class="card-container publicity-card">
             <div class="body-card d-flex">
               <div class="col-md-3 img-card-publicity">
-                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1jLnqI.img?w=800&h=435&q=60&m=2&f=jpg" class="publicity-img" alt="" srcset="">
+                <img src="./resources/publicidad/jhon.jpg" class="publicity-img" alt="" srcset=""> <br>
               </div>
               <div class="col-md-9">
-                <h5 class="card-title">Famosos con Impresionantes titulos Universitarios</h5>
-                <p class="card-text">El cantante se licenció en Literatura Inglesa con especialización en literatura afroamericana por la Universidad de Pensilvania en 1999. Solo tenía 16 años cuando empezó su primer año.</p>
-                <a class="btn btn-outline-secondary mb-3" href="https://www.msn.com/es-xl/noticias/other/famosos-con-impresionantes-t%C3%ADtulos-universitarios/ss-BB1jLuNq?ocid=msedgdhp&pc=U531&cvid=135d15352ccf4141837722e80be2f045&ei=25#image=7">Me interesa</a>
+                <h5 class="card-title">Famosos con Impresionantes titulos Universitarios</h5> <br>
+                <a class="btn__dark mb-3" href="https://www.msn.com/es-xl/noticias/other/famosos-con-impresionantes-t%C3%ADtulos-universitarios/ss-BB1jLuNq?ocid=msedgdhp&pc=U531&cvid=135d15352ccf4141837722e80be2f045&ei=25#image=7">Me interesa</a> <br><br>
                 <p class="card-fotter text-body-secondary"> <i>Updated 1 week ago.</i></p>
               </div>
             </div>
@@ -187,25 +184,23 @@
           <div class="card-container publicity-card">
             <div class="body-card d-flex">
               <div class="col-md-3 img-card-publicity">
-                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA132HXa.img?w=800&h=435&q=60&m=2&f=jpg" class="publicity-img" alt="" srcset="">
+                <img src="./resources/publicidad/perrito.jpg" class="publicity-img" alt="" srcset="">
               </div>
               <div class="col-md-9">
-                <h5 class="card-title">Las razas de perros más inteligentes</h5>
-                <p class="card-text">El border collie es considerado por muchos expertos como el perro más inteligente del mundo. Son muy obedientes, aprenden rápido y son dóciles.</p>
-                <a class="btn btn-outline-secondary mb-3" href="https://www.msn.com/es-xl/entretenimiento/famosos/las-razas-de-perros-m%C3%A1s-inteligentes/ss-AA1gyZDi?ocid=msedgdhp&pc=U531&cvid=135d15352ccf4141837722e80be2f045&ei=41#image=20">Llevame</a>
+                <h5 class="card-title">Las razas de perros más inteligentes</h5> <br>
+                <a class="btn__dark mb-3" href="https://www.msn.com/es-xl/entretenimiento/famosos/las-razas-de-perros-m%C3%A1s-inteligentes/ss-AA1gyZDi?ocid=msedgdhp&pc=U531&cvid=135d15352ccf4141837722e80be2f045&ei=41#image=20">Llevame</a> <br><br>
                 <p class="card-fotter text-body-secondary"> <i>Updated 6 days ago.</i></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>  
   </section>
 
   <section class="contents">
     <div class="container d-flex">
-      <div class="col-md-8 left-col section-ouside">
+      <div class="col-md-8 left-col section-ouside" id="section__ouside">
         <div class="d-flex">
           <div class="col-md-10">
             <p class="text-paragraph ">"<u>Nelson José Almendares Ruiz",</u><strong><em>– Programador</em></strong></p>
@@ -226,7 +221,7 @@
 
   <div class="contents">
     <div class="container">
-      <div class="col-md-8 left-col">
+      <div class="col-md-8" id="left-col">
           <div class="section__inside">
           <p class="text-paragraph ">"<u>Leonardo di ser Piero da Vinci",</u><strong><em>– 15 de abril de 1452</em></strong></p>
           <div class="text-center">
@@ -260,14 +255,13 @@
       </div>
     </div>
   </div>
-  
 
   <footer>
     <div class="container footer__content">
       <div class="col-md-12 text-center">
         <img src="./resources/Logo.png" class="logo-img" alt="" srcset="">
       </div>
-      <div class="grid">
+      <div class="grid" id="footer__info">
         <div class="column">
           <span class="footer-item">Conoce más</span>
             <li class="footer__li mt-4 text-white"><a href="#">Nosotros</a></li>
@@ -290,7 +284,7 @@
             <li class="footer__li"><a href="#">Linked In</a></li>
         </div>
         <div class="column">
-          <span class="footer-item">Público</span> <br>
+          <span class="footer-item">Público</span>
             <li class="footer__li mt-4 mb-4 text-white"><a href="#">Eventos</a></li>
           <span class="footer-item">Políticas y Privacidad</span>
             <li class="footer__li mt-4 text-white"><a href="#">Reglamento</a></li>

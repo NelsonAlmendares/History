@@ -13,11 +13,14 @@
 
 <body>
   <header class="header-top">
-    <div class="d-flex">
+    <div class="top-menu">
       <div class="col-md-3 text-left">
-        <div class="menu-logo">
+        <div class="menu-logo text-center navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAH9JREFUSEvtlNEJgDAQQ183cRPdRDdRN9FNdBNHsUXwq6Clx7XoBe7zEhJCHIpwilqYmEjaxWNsgHC5OIBwN2LOJmDMVQJmzxG46hETMBWnKF4QVWcd0Aso7r7VS1UFGYBWwNkKbE/OBHSsjdfEfHOuVFff2picwL9WPzmetw8nRp4SHB6SGskAAAAASUVORK5CYII="
-        class="menu__icon"/>
+        class="menu__icon" id="menu__ico"/>
+
         </div>
       </div>
       <div class="col-md-6 text-center">
@@ -37,12 +40,6 @@
   <div class="col-md-12">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <!-- Por el momento no usaré el botón  -->
-        <!-- 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-        -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
@@ -54,7 +51,7 @@
                   Biographies
                 </a>
               <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../pages/FelipeII.html">Felipe II Rey de España</a></li>
+              <li><a class="dropdown-item active" href="../pages/FelipeII.html">Felipe II Rey de España</a></li>
               <li><a class="dropdown-item" href="../pages/Tesla.html">Nikola Tesla</a></li>
               <li> 
                 <a class="dropdown-item" href="#"> Don Bosco &raquo; </a>
@@ -106,28 +103,34 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Biographies</li>
-          <li class="breadcrumb-item active" aria-current="page">Nikola Tesla</li>
+          <li class="breadcrumb-item active" aria-current="page">Felipe Rey de España</li>
         </ol>
       </nav>
 
       <section class="main__text">
+        <div class="text-center">
+          <h6 class="name__text">Created by Nelson Almendares</h6>
+        </div>
+        <div class="text-center">
+          <span class="capital__text">Felipe II de Habsburgo</span>
+        </div>
+        <div class="col-md-12 content__main">
+          <p class="text__content">
+            (Valladolid, 1527 - El Escorial, 1598) Rey de España (1556-1598). A excepción del Sacro Imperio Germánico, cuya
+            corona cedió a Fernando I de Habsburgo, el rey y emperador Carlos V legó todas las posesiones europeas y americanas
+            que constituían el Imperio español a su hijo Felipe II, que pasó a ser entonces (como ya lo había sido su
+            progenitor) el monarca más poderoso de la época..<br><br>
+          </p>
           <div class="text-center">
-              <h6 class="name__text">Created by Nelson Almendares</h6>
-          </div>
-          <div class="text-center">
-              <span class="capital__text">Felipe II de Habsburgo</span>
-          </div>
-          <div class="col-md-12 content__main">
-              <p class="text__content">
-                (Valladolid, 1527 - El Escorial, 1598) Rey de España (1556-1598). A excepción del Sacro Imperio Germánico, cuya corona cedió a Fernando I de Habsburgo, el rey y emperador Carlos V legó todas las posesiones europeas y americanas que constituían el Imperio español a su hijo Felipe II, que pasó a ser entonces (como ya lo había sido su progenitor) el monarca más poderoso de la época..<br><br>
-              </p>
-              <div class="text-center">
-                <div class="img__header">
-                  <img src="../resources/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg" alt="San Juan Bosco" class="img-fluid img__bio"> <br> 
-                  <p class=" text__img"><span>|</span> FOTO: <a href="https://www.biografiasyvidas.com/biografia/f/felipe_ii.htm">cc</a></p><br>
+            <div class="img__header">
+                <img src="../resources/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg" alt="San Juan Bosco"
+                  class="img-fluid img__bio" id="img-bio"> <br>
+                <p class=" text__img"><span>|</span> FOTO: <a href="https://www.biografiasyvidas.com/biografia/f/felipe_ii.htm">cc</a>
+                </p><br>
                 </div>
-              </div>
+                </div>
       </section>
+
       <section class="content__info">
         <div class="creator">
           <img src="../resources/profile/Profile.jpg" alt="" class="user__creator-profile">
@@ -147,68 +150,21 @@
           <br><br>
         </p>
         </section>
-
-
-      <section class="phrases">
-        <h6 class="citas__sitio">Nikola Tesla dijo: </h6>
-        <p class="text__content citas__inside">" <b>Lo importante es pensar con claridad</b>" <br> « Los científicos de hoy piensan en profundizar y no en esclarecer. Uno debe ser sensato para pensar con claridad, pero uno puede pensar con profundidad aún siendo un demente».</p>
-      </section>
-
-      <section class="pictures__info text-center">
-        <img src="https://lacasadecampoes.files.wordpress.com/2022/02/felipe-ii-esposas-u30835339200ued-1248x69840abc.jpg?w=1920&h=768&crop=1" class="img-fluid img__info-pictures" alt="">
-        <p class="cita">
-            “Don Felipe Segundo (este gran Rey) fue el que plantó en Madrid de asiento su Corte año de 1561. Y quien ordenó, y ennobleció todas las Casas Reales, y Bosques de su contorno para las Reales Recreaciones y especialmente los del Pardo, Aranjuez, el Escorial, y Balsaín; el que al Alcázar de Madrid añadió la Casa del Campo, el Parque y Bosque de Sagra”.
-            Recopilación de Reales Ordenanzas, página 1, Parte Primera. (1687)<br><br>
-            En 1556, año en el que dio comienzo el reinado de Felipe II, sus credenciales eran la de uno de los reyes más poderosos del mundo, tomo nota del encabezado del juro (Archivo Regional de la Comunidad de Madrid Signatura 96173/6).<br>
-        </p>
-        <div class="cita__author">
-          <p class="text-start">PICTURE BY: <a href="https://lacasadecampo.es/2020/08/19/felipe-ii/" class="text-secondary">Lacasadecampo.com</a></p>
-        </div>
-      </section>
-
-      <section class="phrases" id="notes">
-        <h6 class="citas__sitio">Notas escritas: </h6>
-        <p class="text__content citas__inside"> <span class="capital__commas">"</span> <span class="phrases__text">A nuestros súbditos y vasallos,</span> Por la presente, yo, Felipe II, Rey de España y sus dominios, me dirijo a vosotros con palabras de gratitud y aprecio por vuestro continuo compromiso y lealtad hacia la Corona. Es con gran satisfacción que observo vuestro arduo trabajo y devoción hacia el bienestar de nuestra nación. <br> <br>
-            En estos tiempos de desafíos y cambios, es imperativo mantenernos unidos en nuestra misión de preservar la grandeza y el honor de España. Confío en vuestra diligencia y valor para enfrentar cualquier obstáculo que se presente en nuestro camino. <br> <br>
-            Recordad siempre que vuestro esfuerzo individual contribuye al florecimiento colectivo de nuestro reino. Sigamos adelante con determinación y orgullo, recordando siempre nuestras raíces y tradiciones que nos unen como pueblo. <br> <br>
-            Que la providencia divina nos guíe en nuestros esfuerzos y que la gloria de España resplandezca eternamente bajo nuestro reinado.
-            <span>
-                <br> <p class="fw-normal text-center">Con todo mi afecto y consideración,". <br>Felipe II</p>
-            </span>
-             <br><br>
-      </section>
-
-      <section class="content__info" id="text__content-bottom">       
-        <h3 class="text__content-h3">La política exterior</h3>
-        <p class="text__content">La división de la herencia de Carlos V facilitó la política internacional de Felipe II: al pasar el Sacro Imperio Germánico a manos de Fernando I de Habsburgo, España quedaba libre de las responsabilidades imperiales. En política exterior, Felipe II hubo de abandonar el proyecto de alianza con Inglaterra a causa de la temprana muerte de <b>María Tudor</b> (1558). <br> Las victorias militares de San Quintín (1557) y Gravelinas (1558) pacificaron el recurrente conflicto con Francia (Paz de Cateâu Cambrésis, 1559); el pacto quedó reforzado con el matrimonio de Felipe II con la hija de <b>Enrique II de Francia</b>, Isabel de Valois. Los inicios de su reinado no podían ser más prometedores: Francia, que había sido la perpetua potencia rival de Carlos V, dejaba de ser el principal problema para España.
-            <br>En consecuencia, Felipe II pudo orientar su política exterior hacia el Mediterráneo, encabezando la empresa de frenar el poderío islámico representado por el Imperio Otomano; esta empresa tenía tintes de cruzada religiosa, pero también una lectura en clave interna, pues Felipe II hubo de reprimir una rebelión de los moriscos de Granada (1568-1571)
+        <section class="phrases">
+          <h6 class="citas__sitio">Nikola Tesla dijo: </h6>
+          <p class="text__content citas__inside">" <b>Lo importante es pensar con claridad</b>" <br> « Los científicos de hoy piensan en profundizar y no en esclarecer. Uno debe ser sensato para pensar con claridad, pero uno puede pensar con profundidad aún siendo un demente».</p>
+        </section>
+        <section class="pictures__info text-center">
+          <img src="https://lacasadecampoes.files.wordpress.com/2022/02/felipe-ii-esposas-u30835339200ued-1248x69840abc.jpg?w=1920&h=768&crop=1" class="img-fluid img__info-pictures" alt="">
+          <p class="cita">
+              “Don Felipe Segundo (este gran Rey) fue el que plantó en Madrid de asiento su Corte año de 1561. Y quien ordenó, y ennobleció todas las Casas Reales, y Bosques de su contorno para las Reales Recreaciones y especialmente los del Pardo, Aranjuez, el Escorial, y Balsaín; el que al Alcázar de Madrid añadió la Casa del Campo, el Parque y Bosque de Sagra”.
+              Recopilación de Reales Ordenanzas, página 1, Parte Primera. (1687)<br><br>
+              En 1556, año en el que dio comienzo el reinado de Felipe II, sus credenciales eran la de uno de los reyes más poderosos del mundo, tomo nota del encabezado del juro (Archivo Regional de la Comunidad de Madrid Signatura 96173/6).<br>
           </p>
-          
-      </section>
-
-      <section class="book__detail">
-        <div class="more__info d-flex">
-          <div class="col-md-4 img__container">
-            <img src="../resources/Cover.jpg" class=" img__book" alt="">
+          <div class="cita__author">
+            <p class="text-start">PICTURE BY: <a href="https://lacasadecampo.es/2020/08/19/felipe-ii/" class="text-secondary">Lacasadecampo.com</a></p>
           </div>
-          <div class="col-md-8 img__container-text">
-            <h4>Ensayo sobre Felipe II hombre de estado</h4>
-            <p class="text__content">Este largo ensayo, publicado por primera vez en Century Illustrated Magazine en junio de 1900, es una muestra más del genio del inventor serbio NIKOLA TESLA (1857-1943), el científico revolucionario que cambió para siempre los campos científicos de la electricidad y el magnetismo. .</p>
-            <p class="fst-italic">Por: Staff | Fuente: <i>L</i> Casa del Libro</p>
-            <a href="https://www.casadellibro.com/ebook-el-problema-del-aumento-de-la-energia-humana-traducido-ebook/9791221340754/13057641" type="button" class="btn btn-outline-info">Leer más</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="pictures__info text-center mt-3">
-        <p class="cita">
-            Felipe II nació el 21 de mayo de 1527 en Valladolid, España, como hijo de Carlos I de España (también conocido como Carlos V del Sacro Imperio Romano Germánico) y de Isabel de Portugal. Ascendió al trono español en 1556, sucediendo a su padre, y se convirtió en uno de los monarcas más poderosos de su tiempo. <br>
-            Durante su reinado, Felipe II expandió enormemente el imperio español, consolidando territorios en Europa, América, África y Asia. Fue un ferviente defensor del catolicismo y lideró la Contrarreforma, combatiendo el protestantismo en Europa. También enfrentó desafíos como la guerra con los Países Bajos y la amenaza otomana en el Mediterráneo.
-        </p>
-        <div class="cita__author">
-          <p class="text-start">COMMENT BY: <a href="https://ius-sdb.com/acerca-de-nosotros/don-bosco/?lang=es" class="text-secondary">Nelson José Almendares Ruiz</a></p>
-        </div>
-      </section>
+        </section>
 
     </div>
   </div>

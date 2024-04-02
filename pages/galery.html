@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/Admin/style.css">
+    <link rel="stylesheet" href="../css/Admin/sample_pages.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>History</title>
+</head>
+
+<body>
+    <header class="header-top">
+        <div class="top-menu">
+            <div class="col-md-3 text-left">
+                <div class="menu-logo text-center">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAH9JREFUSEvtlNEJgDAQQ183cRPdRDdRN9FNdBNHsUXwq6Clx7XoBe7zEhJCHIpwilqYmEjaxWNsgHC5OIBwN2LOJmDMVQJmzxG46hETMBWnKF4QVWcd0Aso7r7VS1UFGYBWwNkKbE/OBHSsjdfEfHOuVFff2picwL9WPzmetw8nRp4SHB6SGskAAAAASUVORK5CYII="
+                        class="menu__icon" id="menu__ico" />
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="../resources/Logo.png" class="logo-img" alt="" srcset="">
+            </div>
+            <div class="col-md-3 text-end search-icons align-middle">
+                <div class="searh-logo">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAVNJREFUSEvdldtRw0AMRZVKApUQKkmoJFBJoBJCJaEUfDLSjLxPOVn8kf2xPWPr3Hul9W5kxbVZkSU92JOIHFTQVkR+pudfETnfIrIGA3Kaiu4qRQG+LYWWYAC+HcQ7QYQX8DG99x51mcIodtGPa+pT1zj8jABTGI5QDui5U4CY6Sfvvuq1+YmH+fj4uDcEOEQc11CcHoZK1EZcmQP6dVRhCAw7s1jInz5ElqUREuidWb9CkagSS4PH3p6dvbAoEoUtSqM0IOHp0gEhylD0Huani0nsNdySwGRkerOc/fijlv7hNF0eFO5xqam+kP2q+AGzcL/Xqwm4C0YRpoz9Q/HaMte2N7+0d6UkrjVa42o/3ReF8kwhXBIx9/5fSr3mfuvujcDO9rE3gSNgpbOv6HAEzAYnPWwz4ChYDTg760bCUmB2qI6GGZA+Zufhf8CqA/y4sD/l9FEcvUzVDgAAAABJRU5ErkJggg=="
+                        class="search__icon menu__icon float-end" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navs -->
+    <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Por el momento no usaré el botón  -->
+                <!-- 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+         -->
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Biographies
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/FelipeII.html">Felipe II Rey de España</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/Tesla.html">Nikola Tesla</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> Don Bosco &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="./pages/don_bosco.html">Historia</a></li>
+                                        <li><a class="dropdown-item" href="#">Libros</a></li>
+                                        <li><a class="dropdown-item" href="#">Seminarios &raquo; </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Congregación</a></li>
+                                                <li><a class="dropdown-item" href="#">Su santidad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Referencias externas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/MarieCurie.html">Marie Curie</a></li>
+                                <li><a class="dropdown-item" href="./pages/Leonardo.html">Leonardo da Vinci</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/neil_armstrong.html"> Neil Armstrong &raquo;
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item active" href="#">Historia</a></li>
+                                        <li><a class="dropdown-item" href="#">Documentales</a></li>
+                                        <li><a class="dropdown-item" href="#">Referencias externas</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="dropdown-item" href="./pages/PrincesaDiana.html">Princesa Diana de
+                                        Gales</a></li>
+                                <li><a class="dropdown-item" href="./pages/JuanPablo.html">Juan Pablo II</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Galery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- *************************************** BIENVENIDA *************************************** -->
+    <div class="container">
+        <section class="main__text">
+            <div class="text-center"> <br><br>
+                <h6 class="name__text">Created by Nelson Almendares</h6>
+            </div>
+            <div class="text-center">
+                <span class="capital__text">Galería de Imagenres</span>
+            </div>
+        </section>
+
+        <div class="container-img">
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img1.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>San Juan Bosco</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>        
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img2.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>San Juan Bosco</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img3.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Nikola Tesla</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img4.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Nikola Tesla</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img5.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Juan Pablo II</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img6.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Princesa Diana de Gales</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img7.avif" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Leonardo Da Vinci</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img8.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Neil Armstrong</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img9.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Don Bosco</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img10.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Neil Armstrong</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img11.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Marie Curie</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img12.png" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Leonardo Da Vinci</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img13.webp" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Juan Pablo II</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img14.webp" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Marie Curie</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img15.jpeg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Marie Curie</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img16.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Rey Felipe de España</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img17.webp" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Princesa Diana de Gales</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img18.jpg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Leonardo Da Vinci</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img19.jpeg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Rey Felipe de España</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="">
+                    <figure>
+                        <img src="../resources/Galery/img20.jpeg" alt="">
+                    </figure>
+                    <div class="info__galery d-flex justify-content-between">
+                        <p><b>Neil Armstrong</b></p>
+                        <img src="../resources/info-circle-solid-24.png" id="info__icon" alt="">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container footer__content">
+            <div class="col-md-12 text-center">
+                <img src="../resources/Logo.png" class="logo-img" alt="" srcset="">
+            </div>
+            <div class="grid" id="footer__info">
+                <div class="column">
+                    <span class="footer-item">Conoce más</span>
+                    <li class="footer__li mt-4 text-white"><a href="#">Nosotros</a></li>
+                    <li class="footer__li"><a href="#">Clubes</a></li>
+                    <li class="footer__li"><a href="#">Ubicaciones</a></li>
+                </div>
+                <div class="column">
+                    <span class="footer-item">Mi cuenta</span>
+                    <li class="footer__li mt-4 text-white"><a href="#">Ajustes</a></li>
+                    <li class="footer__li"><a href="#">Mi historial de Busquedas</a></li>
+                    <li class="footer__li"><a href="#">Lista de Lecturas</a></li>
+                    <li class="footer__li"><a href="#">Soporte Técnico</a></li>
+                    <li class="footer__li"><a href="#">Encargos</a></li>
+                </div>
+                <div class="column">
+                    <span class="footer-item">Nuestras Redes</span>
+                    <li class="footer__li mt-4 text-white"><a href="#">Facebook</a></li>
+                    <li class="footer__li"><a href="#">Twitter</a></li>
+                    <li class="footer__li"><a href="#">Instagram</a></li>
+                    <li class="footer__li"><a href="#">Linked In</a></li>
+                </div>
+                <div class="column">
+                    <span class="footer-item">Público</span>
+                    <li class="footer__li mt-4 mb-4 text-white"><a href="#">Eventos</a></li>
+                    <span class="footer-item">Políticas y Privacidad</span>
+                    <li class="footer__li mt-4 text-white"><a href="#">Reglamento</a></li>
+                    <li class="footer__li"><a href="#">Términos y Condiciones</a></li>
+                    <li class="footer__li"><a href="#">Políticas de privacidad</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
