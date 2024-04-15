@@ -37,12 +37,18 @@
   <div class="col-md-12">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-      <!-- Por el momento no usaré el botón  -->
+        <!-- Por el momento no usaré el botón  -->
+        <!-- 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
+
             <li class="nav-item dropdown" id="myDropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Biographies
@@ -80,13 +86,13 @@
               </ul>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="/pages/info.html">About Us</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./pages/galery.html">Galery</a>
+              <a class="nav-link" href="#">Galery</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -95,106 +101,19 @@
   </div>
 
   <div class="container">
-   <div class=" mt-3">
+    <div class=" mt-3">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Biographies</li>
-          <li class="breadcrumb-item active" aria-current="page">About Us</li>
+          <li class="breadcrumb-item active" aria-current="page">History</li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
         </ol>
       </nav>
-
-    <section class="content__info">        
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Nelson José Almendares Ruiz (AR230429)
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body d-flex flex-column text-center">
-                  <img src="../resources/profile/Nelson.jpg" class="img-profile" alt="" srcset="">
-                  <h1 class="about-me">About me</h1>
-                    <strong>Software Developer.</strong> 
-                        He desarrollado aplicaciones para entornos híbridos bajo contrato y como Free Lance, actualmente cursando 2 carreras técnicas y con 2 años de eperiencia en el área
-                        con capaciones profesionales, me gusta el desarrollo Front End, aspirando a ser un Back Developer en unos años. Puedes
-                        encontrar mis proyectos en:
-                  <div class="net__links d-flex">
-                     <div class="btn__link-icon">
-                        <a href="https://www.instagram.com/nelson_almendares14/">
-                           <box-icon name='instagram' type='logo' color='#059bff'>
-                           </box-icon>
-                        </a>
-                     </div>
-                     <div class="btn__link-icon">
-                        <a href="">
-                           <box-icon name='facebook' type='logo' color='#059bff'></box-icon>
-                        </a>
-                     </div>
-                     <div class="btn__link-icon">
-                        <a href="">
-                           <box-icon name='dribbble' type='logo' color='#059bff'></box-icon>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="info__links d-flex">
-                     <button class="info__button">
-                        <a href="https://github.com/NelsonAlmendares">NelsonAlmendares.git</a></button>
-                     <button class="info__button-git">
-                        <a href="https://nelson-almendares-portfolio.netlify.app/">See my projects</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Nelson Vladimir Zelaya Sánchez
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body d-flex flex-column text-center">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small/profile-icon-design-free-vector.jpg" class="img-profile" alt="" srcset="">
-                    <strong>Ténico en Ingeniería.</strong> 
-                        
-                    <a href=""><code>github profile</code></a>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Javier Franciso De Paz Sosa
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body d-flex flex-column text-center">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small/profile-icon-design-free-vector.jpg" class="img-profile" alt="" srcset="">
-                    <strong>Técnico en Ingeniería.</strong> 
-                        
-                    <a href=""><code>github profile</code></a>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Yeimy Johana De Paz Fernández
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body d-flex flex-column text-center">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small/profile-icon-design-free-vector.jpg" class="img-profile" alt="" srcset="">
-                        <strong>Ténico en Ingeniería.</strong> 
-                            
-                        <a href=""><code>github profile</code></a>
-                    </div>
-                </div>
-              </div>
-          </div>
-    </section>
     </div>
+  </div>
+
+  <div class="container">
+    
   </div>
 
   <footer>
