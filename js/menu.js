@@ -53,8 +53,6 @@ window.onresize = adjustImg;
 function ToggleClassPhone() {
   var screenWidt = window.innerWidth;
   var tabView = document.querySelector('#publicidad__container');
-  // Para el comentario
-  var commentView = document.querySelector('#section__ouside');
 
 
   if (screenWidt <= 768) {
