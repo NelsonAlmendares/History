@@ -30,8 +30,18 @@
     font-style: normal;
     font-size: 5rem;
 }
-.text__content {
+
+.text__content-top {
     text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.text__content {
+    text-align: justify;
     padding-left: 3rem;
     padding-right: 3rem;
     margin-top: 1.3rem;
@@ -239,6 +249,17 @@
         padding-right: 2rem;
         font-weight: 400;
     }
+    .img__info-pictures {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 600px;
+    }
+    .more__info {
+        display: flex;
+    }
+    .img__book {
+        height: 200px;
+    }
 }
 
 /* ============ small devices ============ */	
@@ -270,6 +291,11 @@
     }
 
     /* Pictures */
+    .img__info-pictures {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 500px;
+    }
     .pictures__info {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -286,6 +312,10 @@
         padding-right: 3rem;
         margin-bottom: 2rem;
     }
+    
+.more__info {
+    height: 410px;
+}
 }
   
 @media only screen and (max-width: 768px) {
@@ -305,7 +335,7 @@
         padding-right: 0.1rem;
     }
     .text__content {
-        text-align: center;
+        text-align: justify;
         padding-left: 0.1rem;
         padding-right: 0.1rem;
         margin-top: 1.3rem;
@@ -324,12 +354,26 @@
         padding-right: 1rem;
         margin-bottom: 2rem;
     }
+
+    .img__info-pictures {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 400px;
+    }
+    .more__info {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    .img__book {
+        padding-top: 2rem;
+    }
 }
 
 @media only screen and (max-width: 576px) {
     /* Estilos para pantallas pequeñas, como móviles en orientación vertical */
     .text__content {
-        text-align: center;
+        text-align: justify;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         margin-top: 1.3rem;
@@ -365,4 +409,25 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .img__info-pictures {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 350px;
+    }
+    .capital__commas {
+        font-size: 6rem;
+        margin-left: 0.1rem;
+        margin-right: 1rem;
+        float: left;
+        line-height: 0.7;
+    }
 }
+
+@media (max-width: 440px) {
+    /* Your styles for screens with a maximum width of 370px */
+    .img__info-pictures {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 300px;
+    }
+  }

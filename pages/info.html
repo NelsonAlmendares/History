@@ -13,11 +13,13 @@
 
 <body>
   <header class="header-top">
-    <div class="d-flex">
+    <div class="top-menu">
       <div class="col-md-3 text-left">
-        <div class="menu-logo">
+        <div class="menu-logo text-center navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAH9JREFUSEvtlNEJgDAQQ183cRPdRDdRN9FNdBNHsUXwq6Clx7XoBe7zEhJCHIpwilqYmEjaxWNsgHC5OIBwN2LOJmDMVQJmzxG46hETMBWnKF4QVWcd0Aso7r7VS1UFGYBWwNkKbE/OBHSsjdfEfHOuVFff2picwL9WPzmetw8nRp4SHB6SGskAAAAASUVORK5CYII="
-        class="menu__icon"/>
+        class="menu__icon" id="menu__ico"/>
+
         </div>
       </div>
       <div class="col-md-6 text-center">
@@ -27,21 +29,20 @@
         <div class="searh-logo">
           <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAVNJREFUSEvdldtRw0AMRZVKApUQKkmoJFBJoBJCJaEUfDLSjLxPOVn8kf2xPWPr3Hul9W5kxbVZkSU92JOIHFTQVkR+pudfETnfIrIGA3Kaiu4qRQG+LYWWYAC+HcQ7QYQX8DG99x51mcIodtGPa+pT1zj8jABTGI5QDui5U4CY6Sfvvuq1+YmH+fj4uDcEOEQc11CcHoZK1EZcmQP6dVRhCAw7s1jInz5ElqUREuidWb9CkagSS4PH3p6dvbAoEoUtSqM0IOHp0gEhylD0Huani0nsNdySwGRkerOc/fijlv7hNF0eFO5xqam+kP2q+AGzcL/Xqwm4C0YRpoz9Q/HaMte2N7+0d6UkrjVa42o/3ReF8kwhXBIx9/5fSr3mfuvujcDO9rE3gSNgpbOv6HAEzAYnPWwz4ChYDTg760bCUmB2qI6GGZA+Zufhf8CqA/y4sD/l9FEcvUzVDgAAAABJRU5ErkJggg=="
-          class="search__icon float-end"/>
+          class="search__icon menu__icon float-end"/>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Navs -->
   <div class="col-md-12">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-      <!-- Por el momento no usaré el botón  -->
+        <!-- Por el momento no usaré el botón  -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item dropdown" id="myDropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,9 +52,9 @@
               <li><a class="dropdown-item" href="../pages/FelipeII.html">Felipe II Rey de España</a></li>
               <li><a class="dropdown-item" href="../pages/Tesla.html">Nikola Tesla</a></li>
               <li> 
-                <a class="dropdown-item" href="#"> Don Bosco &raquo; </a>
+                <a class="dropdown-item" href="./pages/don_bosco.html"> Don Bosco &raquo; </a>
                   <ul class="submenu dropdown-menu">
-                      <li><a class="dropdown-item" href="../pages/don_bosco.html">Historia</a></li>
+                      <li><a class="dropdown-item" href="./pages/don_bosco.html">Historia</a></li>
                       <li><a class="dropdown-item" href="#">Libros</a></li>
                       <li><a class="dropdown-item" href="#">Seminarios &raquo; </a>
                           <ul class="submenu dropdown-menu">
@@ -80,13 +81,13 @@
               </ul>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="/pages/info.html">About Us</a>
+              <a class="nav-link" href="/pages/info.html">About Us</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./pages/galery.html">Galery</a>
+              <a class="nav-link" href="./pages/galery.html">Galery</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+              <a class="nav-link" href="./pages/contact.html">Contacts</a>
             </li>
           </ul>
         </div>
