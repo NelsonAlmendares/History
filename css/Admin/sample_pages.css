@@ -340,6 +340,12 @@
         padding-right: 0.1rem;
         margin-top: 1.3rem;
     }
+    .text__content-top {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 1.3rem;
+        font-size: 1.1rem;
+    }
 
     /* Citas */
     .cita {
@@ -421,6 +427,13 @@
         float: left;
         line-height: 0.7;
     }
+    .text__content-top {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
 }
 
 @media (max-width: 440px) {

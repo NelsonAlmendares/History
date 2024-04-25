@@ -401,6 +401,9 @@ figure {
     height: 30px;
     filter: invert(100%);
 }
+.icon__footer {
+    color: white;
+}
 
 .container-img .box-img:nth-child(1) {
     grid-column-start: span 2;
@@ -630,6 +633,10 @@ figure {
     }
     .text-intro {
         margin-left: 0.5rem;
+    }
+    .main__content {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 }
 
